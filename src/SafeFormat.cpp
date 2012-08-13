@@ -36,7 +36,7 @@ namespace Loki
 
     void write(std::FILE* f, const char* from, const char* to) {
         assert(from <= to);
-        ::std::fwrite(from, 1, to - from, f);
+        ::std::fwrite(from, 1, static_cast<size_t>(to - from), f);
     }
 
     // Write to a string
