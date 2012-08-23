@@ -30,12 +30,12 @@
 
 #include "UnitTest.h"
 
-// static variable defintion, do not remove
+// static variable definition, do not remove
 
 Test::tests_type Test::tests;
 
 // Merely comment out any of the following headers to
-// prevent thier execution during the test.
+// prevent their execution during the test.
 //
 // A pluggable-factory-like method is used to 
 // auto-register the test, so all that is needed

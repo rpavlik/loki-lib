@@ -336,7 +336,7 @@ bool testRateLimitedFetchPolicy(bool waitBetweenFetch)
         }
     } catch (std::exception &e){
         exceptionOccured = true;
-        cout << "Exception occured" << endl << e.what() <<endl;
+        cout << "Exception occurred" << endl << e.what() <<endl;
     }
     
     // Cleaning things by releasing 

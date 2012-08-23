@@ -263,7 +263,7 @@ void Thingy::AddCount( unsigned int count )
 {
     // This function's checker cares about class invariants and post-conditions,
     // but does not need to check pre-conditions, so it passes in a nullptr for
-    // the pre-condition validator.  Ths post-condition validator just makes sure
+    // the pre-condition validator.  This post-condition validator just makes sure
     // the container has at least 1 element.
     CheckFor::Invariants checker( this, &Thingy::IsValid, nullptr, &Thingy::IsValidFull );
     m_counts.push_back( count );
@@ -289,7 +289,7 @@ void Thingy::ClearCounts( void )
 {
     // This function's checker cares about class invariants and post-conditions,
     // but does not need to check pre-conditions, so it passes in a nullptr for
-    // the pre-condition validator.  Ths post-condition validator just makes sure
+    // the pre-condition validator.  This post-condition validator just makes sure
     // the container has no elements.
     CheckFor::NoThrow checker( this, &Thingy::IsValid, nullptr, &Thingy::IsValidEmpty );
     m_counts.clear();

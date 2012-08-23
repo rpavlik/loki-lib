@@ -34,7 +34,7 @@
 #define SPCACHEDFACTORY_H_
 
 /**
- * This file is intented to be used if you want a CachedFactory with
+ * This file is intended to be used if you want a CachedFactory with
  * a SmartPointer encapsulation policy.
  * It as been defined in a separate file because of the many introduced
  * dependencies (SmartPtr.h would depend on Functor.h and CachedFactory.h

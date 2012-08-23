@@ -212,7 +212,7 @@ public:
     bool operator <= ( const SafeBitConst & rhs ) const { return word <= rhs.word; }
     bool operator >= ( const SafeBitConst & rhs ) const { return word >= rhs.word; }
 
-    /// Comparision operators for mutable bit fields.
+    /// Comparison operators for mutable bit fields.
     bool operator == ( const field_t & rhs ) const { return word == rhs.word; }
     bool operator != ( const field_t & rhs ) const { return word != rhs.word; }
     bool operator <  ( const field_t & rhs ) const { return word <  rhs.word; }

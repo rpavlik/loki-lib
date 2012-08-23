@@ -594,7 +594,7 @@ private:
  Loki's exception-checking policies are named here as typedef's so host classes
  have a one-stop convenience place for declaring them.  If you write your own
  exception policies for ContractChecker, you might want to also write a struct
- similiar to CheckFor to conveniently declare all your policies.
+ similar to CheckFor to conveniently declare all your policies.
  */
 template < class Host, class Memento = void >
 struct CheckFor
@@ -772,7 +772,7 @@ private:
  and class static functions.  All of Loki's exception-checking policies for
  StaticChecker are named here as typedef's.  If you write your own
  exception policies for StaticChecker, you might want to also write a struct
- similiar to CheckStaticFor to conveniently declare all your policies.
+ similar to CheckStaticFor to conveniently declare all your policies.
  */
 struct CheckStaticFor
 {

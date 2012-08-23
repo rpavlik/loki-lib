@@ -162,14 +162,14 @@ namespace Loki
      *
      * This implementation will prevent from Creating more than maxCreation objects
      * within byTime ms by throwing an exception.
-     * Could be usefull to detect prevent loads (http connection for instance).
+     * Could be useful to detect prevent loads (http connection for instance).
      * Use the setRate method to set the rate parameters.
      * default is 10 objects in a second.
      */
      // !! CAUTION !!
      // The std::clock() function is not quite precise
      // under linux this policy might not work.
-     // TODO : get a better implementation (platform dependant)
+     // TODO : get a better implementation (platform dependent)
      class RateLimitedCreation
      {
      private:
@@ -309,7 +309,7 @@ namespace Loki
         const char* what() const throw() { return "Eviction Policy : trying to make room but no objects are available"; }
     };
 
-    // The following class is intented to provide helpers to sort
+    // The following class is intended to provide helpers to sort
     // the container that will hold an eviction score
     template
     <
@@ -837,7 +837,7 @@ namespace Loki
 				// The factory is responsible for the creation and destruction of objects.
 				// If objects are out during the destruction of the Factory : deleting anyway.
 				// This might not be a good idea. But throwing an exception in a destructor is
-				// considered as a bad pratice and asserting might be too much.
+				// considered as a bad practice and asserting might be too much.
 				// What to do ? Leaking memory or corrupting in use pointers ? hmm...
                 D( cout << "====>>  Cache destructor : deleting "<< providedObjects.size()<<" in use objects  <<====" << endl << endl; )
                 for_each(providedObjects.begin(), providedObjects.end(),

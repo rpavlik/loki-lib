@@ -179,7 +179,7 @@ int main(int argc, char *argv[])
     Example *pLocal = new Example("Destroying local Example");
     SetLongevity<Example, void (*)(Example*)>(pLocal, localPriority, &Loki::Private::Deleter<Example>::Delete);
 
-    // Make the global and local objects announce their presense.
+    // Make the global and local objects announce their presence.
     pGlobal->echo("pGlobal created during program initialization.");
     pLocal->echo("pLocal created after main() started.");
 

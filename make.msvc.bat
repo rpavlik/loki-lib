@@ -43,7 +43,7 @@ if defined VCToolkitInstallDir (
 
 
 echo -
-echo - No Visual C++ found, please set the enviroment variable 
+echo - No Visual C++ found, please set the environment variable 
 echo - 
 echo - VCToolkitInstallDir  or  VS71COMNTOOLS or VS80COMNTOOLS 
 echo - 
@@ -82,7 +82,7 @@ goto LEAVE
 :ERROR
 echo -
 echo -
-echo - An error occured. Compiling aborted.
+echo - An error occurred. Compiling aborted.
 echo - 
 pause
 

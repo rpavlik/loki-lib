@@ -555,7 +555,7 @@ namespace Loki
         ///
         ///  \ingroup LongevityLifetimeGroup
         ///  Add your own lifetimes into the namespace 'LongevityLifetime'
-        ///  with your prefered lifetime by adding a struct like this:
+        ///  with your preferred lifetime by adding a struct like this:
         ///
         ///  template<class T>
         ///  struct MyLifetime  : SingletonFixedLongevity< MyLifetimeNumber ,T> {}
@@ -604,7 +604,7 @@ namespace Loki
     ///
     ///  \ingroup LifetimeGroup
     ///
-    ///  Lifetime policyfor the SingletonHolder tempalte.
+    ///  Lifetime policyfor the SingletonHolder template.
     ///  Followers will die after the master dies Followers will not die, if
     ///    - master never dies (NoDestroy policy)
     ///    - master never created
