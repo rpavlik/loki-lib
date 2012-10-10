@@ -48,10 +48,13 @@
             #undef LOKI_THINKS_COMPILER_ALLOWS_THREAD_LOCAL_STORAGE
         #endif
 
-    #elif defined( __clang_major__) && defined(__clang_minor__) && ((__clang_major__ * 100 + __clang_minor__) >= 206) && (__has_feature(tls))
+    #elif defined( __clang_major__) && defined(__clang_minor__) && (__clang_major__ * 100 + __clang_minor__ >= 206)
     // Clang 2.6 includes support for __thread - added in r69545
     // and can tell us when it's usable
-
+        #if !__has_feature(tls)
+            #warning "Clang doesn't support thread_local storage on your platform/build, so you can not use some parts of Loki."
+            #undef LOKI_THINKS_COMPILER_ALLOWS_THREAD_LOCAL_STORAGE
+        #endif
     #elif ( __GNUC__ == 4 ) // GNU versions other than Cygwin.
         #if ( __GNUC_MINOR__ < 4 )
             #warning "GCC versions before 4.4 implement thread_local storage incorrectly, so you can not use some parts of Loki."
