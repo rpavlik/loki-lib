@@ -48,9 +48,9 @@
             #undef LOKI_THINKS_COMPILER_ALLOWS_THREAD_LOCAL_STORAGE
         #endif
 
-    #elif defined(__ELF__) && defined( __clang_major__) && defined(__clang_minor__) && defined(__( ( __clang_major__ * 100 + __clang_minor__) >= 206 )
+    #elif defined( __clang_major__) && defined(__clang_minor__) && ((__clang_major__ * 100 + __clang_minor__) >= 206) && (__has_feature(tls))
     // Clang 2.6 includes support for __thread - added in r69545
-    // and can properly use it when generating ELF binaries, at least.
+    // and can tell us when it's usable
 
     #elif ( __GNUC__ == 4 ) // GNU versions other than Cygwin.
         #if ( __GNUC_MINOR__ < 4 )
