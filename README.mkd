@@ -118,8 +118,9 @@ the typelist argument to `StaticDispatcher`.
 
 More info
 ---------
-Andrei's page: [http://erdani.org][andrei]
-Sourceforge project page: <http://sourceforge.net/projects/loki-lib/>
-Automated Git mirror of upstream Sourceforge SVN: <https://github.com/vancegroup-mirrors/loki-lib>
+
+- Andrei's page: [http://erdani.org][andrei]
+- Sourceforge project page: <http://sourceforge.net/projects/loki-lib/>
+- Automated Git mirror of upstream Sourceforge SVN: <https://github.com/vancegroup-mirrors/loki-lib>
 
 [andrei]:http://erdani.org
